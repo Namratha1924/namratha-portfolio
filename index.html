@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Namratha Ethamukkala — UI/UX Designer</title>
+  <meta name="description" content="Namratha Ethamukkala — UI/UX Designer at SpaceWire Tech and Co-Founder of Avora Brands.">
+  <meta name="theme-color" content="#0D0D0D">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -15 135 124'><rect x='-12' y='-15' width='135' height='124' rx='26' fill='%230D0D0D'/><path d='M0 0H47A47 47 0 0 1 94 47V92A47 47 0 0 0 0 92Z' fill='white'/><path d='M97 0H111V80A14 14 0 0 1 97 94Z' fill='white'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=173">
+</head>
+<body>
+  <!-- Logo mark, reused across the page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="mark" viewBox="0 0 111 94">
+      <path d="M0 0H47A47 47 0 0 1 94 47V92A47 47 0 0 0 0 92Z"/>
+      <path d="M97 0H111V80A14 14 0 0 1 97 94Z"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ NAV (floating glass pill) ============ -->
+  <header class="nav is-dark" id="nav">
+    <a href="#top" class="nav-brand" aria-label="Back to top">
+      <svg class="nav-mark" aria-hidden="true"><use href="#mark"/></svg>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#work">Work</a>
+      <a href="#avora">Avora Brands</a>
+    </nav>
+    <a href="#contact" class="nav-cta" aria-label="Get in touch">
+      <span class="cta-text">Get in touch</span>
+      <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main>
+    <!-- ============ HERO: the logo opens the site ============ -->
+    <section class="hero" id="top" data-theme="dark">
+      <div class="hero-sticky">
+        <div class="water water-dark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <p class="hero-kicker fade-el" id="hero-kicker"></p>
+        <div class="lockup" id="lockup">
+          <svg class="hero-mark" id="hero-mark" viewBox="0 0 111 94" aria-hidden="true">
+            <path class="m-block" d="M0 0H47A47 47 0 0 1 94 47V92A47 47 0 0 0 0 92Z"/>
+            <path class="m-bar" d="M97 0H111V80A14 14 0 0 1 97 94Z"/>
+          </svg>
+          <h1 class="hero-word" id="hero-word"></h1>
+        </div>
+        <p class="hero-role fade-el" id="hero-role"></p>
+        <div class="hero-scroll fade-el" aria-hidden="true">
+          <span>Scroll to step inside</span>
+          <i class="hero-scroll-line"></i>
+        </div>
+        <div class="hero-white" id="hero-white" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" data-theme="light">
+      <div class="water water-light" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container">
+        <div class="about-intro">
+          <div class="about-copy">
+            <p class="eyebrow greeting reveal">Nice to meet you.</p>
+            <p class="statement-text" id="statement"></p>
+            <p class="statement-more reveal" id="statement-more"></p>
+          </div>
+          <figure class="portrait" id="portrait">
+            <div class="portrait-frame"><img id="portrait-img" alt="" decoding="async"></div>
+            <figcaption class="glass light portrait-chip">
+              <span class="portrait-dot" aria-hidden="true"></span>
+              <span><strong data-name></strong><small id="portrait-caption"></small></span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="roles" id="roles"></div>
+        <div class="metrics" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY: horizontal story ============ -->
+    <section class="journey" id="journey" data-theme="dark">
+      <div class="journey-sticky">
+        <div class="j-sky" id="journey-water" aria-hidden="true"><i class="j-stars"></i><i class="j-aurora a1"></i><i class="j-aurora a2"></i><i class="j-aurora a3"></i><i class="j-spot"></i><i class="j-grain"></i></div>
+        <div class="container journey-head">
+          <div class="journey-top">
+            <p class="eyebrow">The journey</p>
+            <p class="journey-year" id="journey-year" aria-hidden="true">2025</p>
+          </div>
+          <h2 class="section-title" id="journey-title"></h2>
+        </div>
+        <div class="journey-track" id="journey-track">
+          <svg class="journey-line" id="journey-line" aria-hidden="true">
+            <defs>
+              <linearGradient id="jl-grad" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" stop-color="#7FD6FF"/>
+                <stop offset=".5" stop-color="#FFFFFF"/>
+                <stop offset="1" stop-color="#B9B4FF"/>
+              </linearGradient>
+            </defs>
+            <path class="jl-ghost" id="jl-ghost"/>
+            <path class="jl-path" id="jl-path"/>
+            <g id="jl-dots"></g>
+            <circle class="jl-tip" id="jl-tip" r="6"/>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="journey-progress"><span id="journey-bar"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHIPPED APPS ============ -->
+    <section class="apps" id="work" data-theme="light">
+      <div class="water water-light" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container apps-grid">
+        <div class="apps-copy">
+          <p class="eyebrow reveal">Shipped at SpaceWire Tech</p>
+          <h2 class="section-title reveal">Six apps. <span class="muted">Live in the stores.</span></h2>
+          <p class="apps-sub reveal">Devotion, fintech, AI, safety, voice and audio — six very different problems, designed end to end in my first months as a full-time designer.</p>
+          <p class="apps-note reveal" id="apps-note"></p>
+        </div>
+        <div class="app-showcase reveal" id="app-tiles"></div>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDIES: stacking cards ============ -->
+    <section class="work" data-theme="light">
+      <div class="container work-head">
+        <p class="eyebrow reveal">Case studies</p>
+        <h2 class="section-title reveal">Where I learned <span class="muted">to think like a designer.</span></h2>
+      </div>
+      <div class="container stack" id="stack"></div>
+    </section>
+
+    <!-- ============ AVORA BRANDS: my role, and the first milestone ============ -->
+    <section class="avora" id="avora" data-theme="dark">
+      <div class="av-glow" aria-hidden="true"><i></i><i></i></div>
+      <img class="av-watermark" src="images/avora/avora-mark.png" alt="" aria-hidden="true" decoding="async">
+      <div class="container av-split">
+        <div class="av-left">
+          <p class="eyebrow reveal" id="avora-role"></p>
+          <h2 class="av-title" id="avora-title"></h2>
+          <p class="av-text reveal" id="avora-text"></p>
+          <a class="pill pill-glass avora-link reveal" id="avora-link" target="_blank" rel="noopener"></a>
+        </div>
+        <article class="milestone reveal" id="milestone"></article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" data-theme="dark">
+      <div class="water water-dark water-low" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container contact-inner">
+        <h2 class="contact-title reveal"><span id="contact-title"></span><br><span class="shine">Let's make it real.</span></h2>
+        <p class="contact-sub reveal" id="contact-sub"></p>
+        <div class="contact-actions reveal">
+          <a class="pill pill-light" id="email-link" href="#">Say hello <span aria-hidden="true">→</span></a>
+          <button class="pill pill-glass" id="copy-btn" type="button">Copy email</button>
+        </div>
+      </div>
+      <footer class="container footer">
+        <div class="footer-brand">
+          <svg aria-hidden="true"><use href="#mark"/></svg>
+          <span>Designed &amp; built by <span data-name></span> · © <span id="year"></span></span>
+        </div>
+        <ul class="socials" id="socials"></ul>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/data.js?v=173"></script>
+  <script src="js/main.js?v=173"></script>
+</body>
+</html>
